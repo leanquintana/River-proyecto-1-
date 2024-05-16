@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.primer__nav {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid black;
+}
+
+.primer__nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.primer__nav li {
+    list-style: none;
+    font-size: 14px;
+    padding: 1rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.099);
+    text-align: center;
+}
+
+
+.primer__nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.primer__nav a:hover{
+    color: red;
+    text-decoration: underline 1px solid red;
+}
+
+.Logo__river img {
+    width: 125px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+}
+
+.segundo__nav {
+    background-color: #333;
+    color: white;
+}
+
+.segundo__nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.segundo__nav li {
+    padding: 15px;
+    border-left: 1px solid #ffffff1d;
+}
+
+.segundo__nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.segundo__nav li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.banner__river img {
+    width: 100%;
+    height: 60vh;
+}
+
+.footer__river {
+    background-color: #242424;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__dos {
+    display: flex;
+    justify-content: ce;
+    align-items: center;
+}
+
+.footer__dos img {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.406);
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.footer__dos img:first-child:hover {
+    background-color: rgba(39, 39, 195, 0.325);
+    cursor: pointer;
+}
+
+.footer__dos img:nth-child(2):hover {
+    background-color: skyblue;
+}
+
+.footer__dos img:nth-child(3):hover {
+    background-color: rgba(101, 16, 101, 0.627);
+    color: #333;
+}
+
+.footer__dos img:nth-child(4):hover {
+    background-color: rgba(195, 33, 33, 0.547);
+}
+
+
+/*---- RIVER ID ----*/
+
+.body-id {
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+}
+
+.main-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.riverid__uno {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.riverid__uno h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.riverid__uno b {
+    color: red;
+}
+
+.riverid__uno h2, p {
+    color: white;
+}
+
+
+.riverid__uno form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+.riverid__uno form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: white;
+}
+
+.riverid__uno form label input {
+    width: 20vw;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin: 10px auto;
+}
+
+.riverid__uno button {
+    background-color: red;
+    outline: none;
+    border: transparent;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.riverid__dos {
+    width: 50%;
+}
+
+.footer-id {
+    background-color: #333;
+    height: 20vh;
+}
+
+.footer-id img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/* ---- PLANTEL ---- */
+
+.container-fluid {
+
+}
+
+.banner-plantel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.banner-plantel img {
+    width: 100%;
+    height: 60vh;
+
+}
+
+.banner-plantel p {
+    background-color: rgba(0, 0, 0, 0.662);
+    color: rgb(255, 255, 255);
+    padding: 20px 100px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 2rem;
+    bottom: 0;
+    text-align: center;
+    
+}
+
+.main-plantel h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.jugadores-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jugadores-grid span {
+    border-bottom: 2px solid red;
+    padding: 10px;
+}
+
+/*- ENTRADAS -*/
+
+.monumental-img img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container-fluid .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .banner-plantel p {
+        padding: 20px;
+    }
+
+    .container-fluid .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .riverid__dos img {
+        display: none;
+    }
+
+    .riverid__uno {
+        width: 100%;
+    }
+}
+
+
+
